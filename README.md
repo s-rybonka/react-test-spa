@@ -88,7 +88,7 @@ MIT
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd {{ cookiecutter.project_slug }}
+   cd react_test_spa
    ```
 
 2. Install dependencies:
@@ -151,7 +151,7 @@ src/
 Create a `.env` file in the root directory with the following variables:
 
 ```env
-VITE_APP_TITLE={{ cookiecutter.project_name }}
+VITE_APP_TITLE=React Test SPA
 VITE_APP_API_URL=http://localhost:3000/api
 ```
 
