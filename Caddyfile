@@ -1,0 +1,23 @@
+:80 {
+    root * /usr/share/caddy
+    encode gzip
+    file_server
+    try_files {path} /index.html
+
+    header {
+        # Security headers
+        X-Frame-Options "SAMEORIGIN"
+        X-XSS-Protection "1; mode=block"
+        X-Content-Type-Options "nosniff"
+        Referrer-Policy "strict-origin-when-cross-origin"
+        Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:;"
+        
+        # Cache static assets
+        Cache-Control "public, max-age=2592000" for *.{js,css,png,jpg,jpeg,gif,ico,svg}
+    }
+
+    # Handle errors
+    handle_errors {
+        rewrite * /index.html
+    }
+} 
