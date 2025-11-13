@@ -1,27 +1,4 @@
-# {{ cookiecutter.project_name }}
-
-{{ cookiecutter.project_description }}
-
-## Features
-
-- React 18 with TypeScript
-- Vite for fast development and building
-- Multiple UI Framework options:
-  - Material UI: Google's Material Design implementation
-  - Bootstrap: Popular CSS framework with React components
-  - Chakra UI: Modern component library with accessibility features
-  - Tailwind CSS: Utility-first CSS framework
-- State Management:
-  
-  - Zustand for simple state management
-  
-- Internationalization with i18next
-- Docker support for containerization
-- End-to-end testing with Cypress
-- Component documentation with Storybook
-- Git hooks with Husky
-- Commit message linting with commitlint
-- No CI/CD
+# React Test SPA
 
 ## Getting Started
 
@@ -44,24 +21,6 @@
 
 This project uses Tailwind CSS as the UI framework.
 
-### Material UI
-- Modern, accessible components following Google's Material Design
-- Comprehensive component library
-- Customizable theming system
-- Built-in TypeScript support
-
-### Bootstrap
-- Popular CSS framework with React components
-- Responsive grid system
-- Extensive component library
-- Easy to customize
-
-### Chakra UI
-- Modern component library with accessibility features
-- Built-in dark mode support
-- Responsive and mobile-first
-- TypeScript support
-- Customizable theme system
 
 ### Tailwind CSS
 - Utility-first CSS framework
@@ -281,7 +240,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- Your Name - Initial work
+- Stanislav Rybonka - Full-stack Python Developer
 
 ## 🙏 Acknowledgments
 
