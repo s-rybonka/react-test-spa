@@ -244,20 +244,6 @@ export const About = () => {
           </div>
         ))}
       </div>
-
-      <div className="mt-12">
-        <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">Project Repository</h2>
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
-          <Link
-            href={`https://github.com/${projectConfig.github.username}/${projectConfig.github.repo}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 dark:text-blue-400 hover:underline"
-          >
-            {`${projectConfig.github.username}/${projectConfig.github.repo}`}
-          </Link>
-        </div>
-      </div>
     </div>
   );
   
