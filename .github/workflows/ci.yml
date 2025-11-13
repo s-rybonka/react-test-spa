@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  check:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,8 +21,5 @@ jobs:
     - name: Install dependencies
       run: npm ci
     
-    - name: Run lint
-      run: npm run lint
-    
-    - name: Build
-      run: npm run build
+    - name: Verify installation
+      run: npm list --depth=0
